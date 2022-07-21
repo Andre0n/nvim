@@ -1,6 +1,5 @@
 local exists, cmp = pcall(require, "cmp")
 if not exists then
-    print("Hello")
 	return
 end
 vim.opt.completeopt = "menuone,noselect"

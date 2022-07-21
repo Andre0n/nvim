@@ -1,7 +1,6 @@
 local exists, gitsigns = pcall(require, "gitsigns")
 
 if not exists then
-    print("hE")
     return
 end
 local options = {
