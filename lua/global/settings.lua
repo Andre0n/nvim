@@ -5,7 +5,7 @@
 --
 --]]
 
-vim.cmd "colorscheme darcula"
+pcall(vim.cmd, "colorscheme darcula")
 vim.cmd "syntax enable"
 vim.cmd "filetype plugin indent on"
 
