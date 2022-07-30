@@ -62,7 +62,7 @@ if exists then
 	capabilities = cmp_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())
 end
 
-local lsp_servers = { "sumneko_lua", "clangd" }
+local lsp_servers = { "sumneko_lua", "clangd", "html"}
 for _, server in ipairs(lsp_servers) do
 	lspconfig[server].setup({
 		capabilities = capabilities,
