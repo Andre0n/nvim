@@ -5,7 +5,11 @@
 --
 --]]
 
-pcall(vim.cmd, "colorscheme darcula")
+pcall(vim.cmd, "colorscheme onedark")
+vim.g.onedark_config = {
+   style = 'deep'
+}
+
 vim.cmd "syntax enable"
 vim.cmd "filetype plugin indent on"
 
