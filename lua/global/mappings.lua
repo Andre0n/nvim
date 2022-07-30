@@ -46,16 +46,27 @@ vim.api.nvim_set_keymap("v", "<M-;>", ":CommentToggle <CR>", opts)
 -- Lazygit
 vim.api.nvim_set_keymap("n", "<M-g>", ":LazyGit<CR>", opts)
 
--- Build 
+-- Build
 vim.api.nvim_set_keymap("n", "<C-b>", ":lua RunBuild() <CR>", opts)
 
 -- Terminal
-vim.api.nvim_set_keymap("n", "<leader>t", ":execute 15 .. 'new +terminal' | let b:term_type = 'hori' | startinsert <CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>v", ":execute 'vnew +terminal' | let b:term_type = 'vert' | startinsert <CR>", opts)
-
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>t",
+	":execute 15 .. 'new +terminal' | let b:term_type = 'hori' | startinsert <CR>",
+	opts
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>v",
+	":execute 'vnew +terminal' | let b:term_type = 'vert' | startinsert <CR>",
+	opts
+)
 
 -- Buffer Navigation
 vim.api.nvim_set_keymap("n", "<Tab>", ":BufferLineCycleNext<CR>", opts)
 vim.api.nvim_set_keymap("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>x", ":BufferLinePickClose<CR>", opts)
 
+-- Format Code Keys
+vim.api.nvim_set_keymap("n", "<leader>f", ":Format<CR>", opts)
