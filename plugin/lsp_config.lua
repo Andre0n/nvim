@@ -66,6 +66,5 @@ local lsp_servers = { "sumneko_lua", "clangd", "html"}
 for _, server in ipairs(lsp_servers) do
 	lspconfig[server].setup({
 		capabilities = capabilities,
-		-- flags = lsp_flags,
 	})
 end
