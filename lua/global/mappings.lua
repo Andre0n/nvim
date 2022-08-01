@@ -51,16 +51,16 @@ vim.api.nvim_set_keymap("n", "<C-b>", ":lua RunBuild() <CR>", opts)
 
 -- Terminal
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>t",
-	":execute 15 .. 'new +terminal' | let b:term_type = 'hori' | startinsert <CR>",
-	opts
+    "n",
+    "<leader>t",
+    ":execute 15 .. 'new +terminal' | let b:term_type = 'hori' | startinsert <CR>",
+    opts
 )
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>v",
-	":execute 'vnew +terminal' | let b:term_type = 'vert' | startinsert <CR>",
-	opts
+    "n",
+    "<leader>v",
+    ":execute 'vnew +terminal' | let b:term_type = 'vert' | startinsert <CR>",
+    opts
 )
 
 -- Buffer Navigation
