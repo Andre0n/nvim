@@ -7,15 +7,15 @@
 
 pcall(vim.cmd, "colorscheme onedark")
 vim.g.onedark_config = {
-   style = 'deep'
+    style = "deep",
 }
 
-vim.cmd "syntax enable"
-vim.cmd "filetype plugin indent on"
+vim.cmd("syntax enable")
+vim.cmd("filetype plugin indent on")
 
 vim.opt.termguicolors = true
-vim.opt.cmdheight = 1
-vim.opt.backup =false
+vim.opt.cmdheight = 2
+vim.opt.backup = false
 vim.opt.swapfile = false
 vim.opt.writebackup = false
 vim.opt.hlsearch = false
@@ -52,49 +52,60 @@ vim.opt.sidescrolloff = 8
 
 vim.g.mapleader = " "
 
+vim.opt.mouse = "a"
+vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.colorcolumn = "99999"
+vim.opt.shortmess:append("c")
+vim.opt.shortmess:append("I")
+vim.opt.whichwrap:append("<,>,[,],h,l")
+vim.opt.signcolumn = "yes"
+
+-- Experimental Features
+vim.opt.updatetime = 300 -- faster completion
+vim.opt.timeoutlen = 250
+vim.opt.foldexpr = ""
+
 -- disable some builtin vim plugins
 local default_plugins = {
-   "2html_plugin",
-   "getscript",
-   "getscriptPlugin",
-   "gzip",
-   "logipat",
-   "netrw",
-   "netrwPlugin",
-   "netrwSettings",
-   "netrwFileHandlers",
-   "matchit",
-   "tar",
-   "tarPlugin",
-   "rrhelper",
-   "spellfile_plugin",
-   "vimball",
-   "vimballPlugin",
-   "zip",
-   "zipPlugin",
-   "tutor",
-   "rplugin",
-   "syntax",
-   "synmenu",
-   "optwin",
-   "compiler",
-   "bugreport",
-   "ftplugin",
+    "2html_plugin",
+    "getscript",
+    "getscriptPlugin",
+    "gzip",
+    "logipat",
+    "netrw",
+    "netrwPlugin",
+    "netrwSettings",
+    "netrwFileHandlers",
+    "matchit",
+    "tar",
+    "tarPlugin",
+    "rrhelper",
+    "spellfile_plugin",
+    "vimball",
+    "vimballPlugin",
+    "zip",
+    "zipPlugin",
+    "tutor",
+    "rplugin",
+    "syntax",
+    "synmenu",
+    "optwin",
+    "compiler",
+    "bugreport",
+    "ftplugin",
 }
 
 for _, plugin in pairs(default_plugins) do
-   vim.g["loaded_" .. plugin] = 1
+    vim.g["loaded_" .. plugin] = 1
 end
 
 local default_providers = {
-   "node",
-   "perl",
-   "python3",
-   "ruby",
+    "node",
+    "perl",
+    "python3",
+    "ruby",
 }
 
 for _, provider in ipairs(default_providers) do
-   vim.g["loaded_" .. provider .. "_provider"] = 0
+    vim.g["loaded_" .. provider .. "_provider"] = 0
 end
-
-
