@@ -45,8 +45,6 @@ local plugins = {
 			require("bufferline").setup({})
 		end,
 	},
-	-- Optional plugins --
-	{ "sakhnik/nvim-gdb", opt = true },
 }
 
 return require("packer").startup(function(use)
