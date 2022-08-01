@@ -3,7 +3,6 @@ local exists, formatter = pcall(require, "formatter")
 if not exists then
     return
 end
-local util = require "formatter.util"
 
 formatter.setup({
     -- Enable or disable logging
@@ -14,21 +13,21 @@ formatter.setup({
         -- and will be executed in order
         lua = {
             require("formatter.filetypes.lua").stylua,
-       },
-        rust  = {
+        },
+        rust = {
             require("formatter.filetypes.rust").rustfmt,
         },
-        c  = {
+        c = {
             require("formatter.filetypes.c").clangformat,
         },
-        cpp  = {
+        cpp = {
             require("formatter.filetypes.cpp").clangformat,
         },
         html = {
-             require("formatter.filetypes.html").prettier,
+            require("formatter.filetypes.html").prettier,
         },
         css = {
-             require("formatter.filetypes.css").prettier,
-        }
-    }
+            require("formatter.filetypes.css").prettier,
+        },
+    },
 })
