@@ -1,6 +1,6 @@
 pcall(vim.cmd, "packadd nvim-lsp-installer")
 
-local exists, lsp_installer = pcall(require,"nvim-lsp-installer")
+local exists, lsp_installer = pcall(require, "nvim-lsp-installer")
 
 if not exists then
     return
@@ -13,10 +13,10 @@ lsp_installer.on_server_ready(function(server)
             settings = {
                 Lua = {
                     diagnostics = {
-                        globals = { 'vim', 'use' }
-                    }
-                }
-            }
+                        globals = { "vim", "use" },
+                    },
+                },
+            },
         }
     end
     server:setup(opts)
