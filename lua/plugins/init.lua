@@ -29,8 +29,7 @@ local plugins = {
         end,
     },
     { "kyazdani42/nvim-tree.lua", requires = { "kyazdani42/nvim-web-devicons" } },
-    { "doums/darcula" },
-    { "navarasu/onedark.nvim" },
+    { "bluz71/vim-moonfly-colors" },
     {
         "terrortylor/nvim-comment",
         config = function()
