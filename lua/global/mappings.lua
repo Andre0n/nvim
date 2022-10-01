@@ -20,24 +20,24 @@ vim.api.nvim_set_keymap("v", "d", '"_d', opts)
 vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle <CR>", opts)
 
 -- LSP
-vim.api.nvim_set_keymap("n", "<space>e", ":lua vim.diagnostic.open_float() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>e", ":lua vim.diagnostic.open_float() <CR>", opts)
 vim.api.nvim_set_keymap("n", "[d", ":lua vim.diagnostic.goto_prev() <CR>", opts)
 vim.api.nvim_set_keymap("n", "]d", ":lua vim.diagnostic.goto_next() <CR>", opts)
-vim.api.nvim_set_keymap("n", "<space>q", ":lua vim.diagnostic.setloclist() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>q", ":lua vim.diagnostic.setloclist() <CR>", opts)
 
 vim.api.nvim_set_keymap("n", "gD", ":lua vim.lsp.buf.declaration() <CR>", opts)
 vim.api.nvim_set_keymap("n", "gd", ":lua vim.lsp.buf.definition() <CR>", opts)
 vim.api.nvim_set_keymap("n", "K", ":lua vim.lsp.buf.hover() <CR>", opts)
 vim.api.nvim_set_keymap("n", "gi", ":lua vim.lsp.buf.implementation() <CR>", opts)
-vim.api.nvim_set_keymap("n", "<space>k", ":lua vim.lsp.buf.signature_help() <CR>", opts)
-vim.api.nvim_set_keymap("n", "<space>wa", ":lua vim.lsp.buf.add_workspace_folder() <CR>", opts)
-vim.api.nvim_set_keymap("n", "<space>wr", ":lua vim.lsp.buf.remove_workspace_folder() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>k", ":lua vim.lsp.buf.signature_help() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>wa", ":lua vim.lsp.buf.add_workspace_folder() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>wr", ":lua vim.lsp.buf.remove_workspace_folder() <CR>", opts)
 
-vim.api.nvim_set_keymap("n", "<space>D", ":lua vim.lsp.buf.type_definition() <CR>", opts)
-vim.api.nvim_set_keymap("n", "<space>rn", ":lua vim.lsp.buf.rename() <CR>", opts)
-vim.api.nvim_set_keymap("n", "<space>ca", ":lua vim.lsp.buf.code_action() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>D", ":lua vim.lsp.buf.type_definition() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>rn", ":lua vim.lsp.buf.rename() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>ca", ":lua vim.lsp.buf.code_action() <CR>", opts)
 vim.api.nvim_set_keymap("n", "gr", ":lua vim.lsp.buf.references() <CR>", opts)
-vim.api.nvim_set_keymap("n", "<space>f", ":lua vim.lsp.buf.formatting() <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>lf", ":lua vim.lsp.buf.formatting()<CR>", opts)
 
 -- Comment Toggler
 vim.api.nvim_set_keymap("n", "<M-;>", ":CommentToggle <CR>", opts)
