@@ -19,7 +19,7 @@ vim.opt.hlsearch = false
 vim.opt.wrap = false
 
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
 vim.opt.smartindent = true
 vim.opt.hidden = true
 vim.opt.ignorecase = true
