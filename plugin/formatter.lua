@@ -29,5 +29,11 @@ formatter.setup({
         css = {
             require("formatter.filetypes.css").prettier,
         },
+        python = {
+            require("formatter.filetypes.python").autopep8,
+        },
+        typescriptreact = {
+            require("formatter.filetypes.typescriptreact").prettier,
+        },
     },
 })
