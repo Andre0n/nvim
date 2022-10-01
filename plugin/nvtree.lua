@@ -1,7 +1,7 @@
 local eixists, nvimtree = pcall(require, "nvim-tree")
 
 if not eixists then
-	return
+    return
 end
 
 local options = {
