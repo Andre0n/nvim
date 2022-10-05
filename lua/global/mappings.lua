@@ -37,7 +37,7 @@ vim.api.nvim_set_keymap("n", "<leader>D", ":lua vim.lsp.buf.type_definition() <C
 vim.api.nvim_set_keymap("n", "<leader>rn", ":lua vim.lsp.buf.rename() <CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>ca", ":lua vim.lsp.buf.code_action() <CR>", opts)
 vim.api.nvim_set_keymap("n", "gr", ":lua vim.lsp.buf.references() <CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>lf", ":lua vim.lsp.buf.formatting()<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>lf", ":lua vim.lsp.buf.format({async = true })<CR>", opts)
 
 -- Comment Toggler
 vim.api.nvim_set_keymap("n", "<M-;>", ":CommentToggle <CR>", opts)
