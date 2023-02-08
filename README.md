@@ -1,9 +1,9 @@
-# Neovim Brabo
+# Neovim Simple
 My basic neovim config. Follow the instructions to install.
 
 ## Pre-requisites
 - You should be an existing vim user or keen to learn nvim.
-- [Neovim 0.7.2](https://neovim.io/)
+- [Neovim 0.8.3](https://neovim.io/)
 - use a nerd font in your terminal emulator. i like [that](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/iosevka.zip)
 
 ## Install
