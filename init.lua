@@ -1,5 +1,2 @@
-require ("global.settings")
-require ("global.mappings")
-require ("global.autocmds")
-require ("global.functions")
-require ("plugins")
+require("core")
+require("plugins")
